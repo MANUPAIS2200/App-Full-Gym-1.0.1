@@ -1,0 +1,44 @@
+.portada {
+	display: flex;
+	flex-direction: column;
+
+	background-image: url("../../../public/images/motivado-joven-rubia-hombre-medio-entrenamiento-pie-tabla-manos-juntas\ \(1\).jpg");
+	background-size: cover;
+	background-position: center;
+
+	width: 100%;
+	height: 100vh;
+	justify-content: flex-end;
+	align-items: center;
+	padding-bottom: 3%;
+}
+
+.cuadroPpal {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 13%;
+
+	gap: 10px;
+}
+
+.titulo {
+	font-size: 150%;
+}
+
+.subtitulo {
+	font-size: 80%;
+}
+.btnPersonaliza {
+	font-size: 20px;
+	padding: 2%;
+	border-radius: 10%;
+}
+.prueba {
+	font-size: medium;
+}
+
+@media (max-width: 800px) {
+	.portada {
+		background-image: url("../../../public/images/vista-frontal-persona-trans-telefono-inteligente\ \(2\).jpg");
+	}
+}

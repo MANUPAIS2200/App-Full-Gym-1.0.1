@@ -1,0 +1,11 @@
+/* Estilo para reducir el tamaño del texto en el footer */
+.text-small {
+	font-size: 12px; /* Tamaño de fuente más pequeño, ajusta según tus necesidades */
+  }
+  
+  /* Aplicar el estilo a los elementos específicos que deseas reducir */
+  /* Por ejemplo, a los párrafos en el segundo MDBCol */
+  .MDBCol.md-2 p {
+	font-size: 12px; /* Tamaño de fuente más pequeño, ajusta según tus necesidades */
+  }
+  
