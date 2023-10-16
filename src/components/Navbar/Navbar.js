@@ -3,8 +3,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./Navbar.css";
 import {FaInstagram, FaWhatsapp, FaTiktok} from "react-icons/fa";
-import {CgGym} from "react-icons/cg";
 import {NavLink} from "react-router-dom";
+import logoo from "../../image107.jpg";
 
 function NavigationBar() {
 	return (
@@ -17,7 +17,7 @@ function NavigationBar() {
 		>
 			<Container>
 				<Navbar.Brand>
-					<CgGym className="logo" />
+					<img src={logoo} alt="logo"></img>
 				</Navbar.Brand>
 
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" className="tog" />
