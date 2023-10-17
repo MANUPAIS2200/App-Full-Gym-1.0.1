@@ -10,7 +10,7 @@ import Servicios from "./components/Servicios/Servicios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Home from "./Home";
-import Salas from "./Salas";
+import Salas from "./components/Salas/Salas";
 import Clases from "./components/Clases/Clases";
 import Nosotros from "./components/Nosotros/Nosotros";
 import Contacto from "./components/Contacto/Contacto";
@@ -24,7 +24,7 @@ function App() {
 
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="/salas" element={<Salas />} />
+					<Route path="/Salas" element={<Salas />} />
 					<Route path="/clases" element={<Clases />} />
 					<Route path="/servicios" element={<Servicios />} />
 					<Route path="/nosotros" element={<Nosotros />} />
