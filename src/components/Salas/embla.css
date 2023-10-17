@@ -2,30 +2,44 @@
 .carousel-container {
   background-color: gray;
   padding: 20px;
-  max-width: 10%; /* Tamaño máximo del contenedor, un 10% del ancho por defecto */
+  max-width: 670px;
   margin: 0 auto;
   position: relative;
-  width: 100%; /* Tamaño completo cuando está expandido */
-  height: 100%; /* Tamaño completo cuando está expandido */
-  transition: max-width 0.5s, max-height 0.5s;
-  overflow: hidden;
-  text-align: center; /* Centra el botón horizontalmente */
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
 }
 
-.carousel-container.expanded {
-  max-width: 100%;
-  max-height:40%;
+/* Título del carrusel */
+.carousel-title {
+  background-color: #1bcacd;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 1;
 }
 
-/* Estilos para el botón "Contraer" o "Expandir" */
-.expand-button {
+/* Botón de flecha en la esquina superior derecha */
+.arrow-button {
+  background-color: #1bcacd00;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
   position: absolute;
-  top: 10px; /* Ajusta la posición vertical según tus preferencias */
-  right: 10px; /* Ajusta la posición horizontal según tus preferencias */
+  top: 15px;
+  right: 60px;
+  z-index: 2; /* Asegúrate de tener un índice z mayor que el del título */
 }
 
+/* Estilo de la flecha */
+.arrow-icon {
+  margin-right: 8px;
+  vertical-align: middle;
+}
 
-/* Los estilos restantes para el carrusel se mantienen iguales */
 .embla {
   position: relative;
 }
@@ -75,7 +89,7 @@
   min-width: 100%;
   max-width: none;
   transform: translate(-50%, -50%);
-  max-width: 100%; /* Añade esta línea para que las imágenes se ajusten al ancho del contenedor */
+  max-width: 100%;
   max-height: 100%;
 }
 
