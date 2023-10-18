@@ -50,10 +50,28 @@ const EmblaCarousel = ({ slides, options = { loop: false } }) => {
   };
 
   return (
-    <div className={`carousel-container ${isExpanded ? "expanded" : ""}`}>
-      <button className="expand-button" onClick={handleExpandToggle}>
-        {isExpanded ? "Contraer" : "Expandir"}
-      </button>
+    <div className="carousel-container">
+      <div className="title-container">
+        <div className="carousel-title">Título del Carrusel</div>
+        <div className="arrow-button" style={{ width: '20px', height: '27.2px' }}>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="46"
+    height="27.2"
+    viewBox="0 0 58 34"
+    fill="none"
+  >
+    <path
+      d="M54 4L29 29.0711L3.99999 4.00301"
+      stroke="black"
+      stroke-width="8"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </svg>
+</div>
+
+      </div>
       <div className="embla">
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container">
